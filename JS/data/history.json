@@ -1,0 +1,16 @@
+{
+    "milestone_01": 
+                   {
+                     "year": -3000,
+                     "title": "Abakus",
+                     "description": "První mechanické počítadlo používané ve starověkém Sumeru a Egyptě."
+                    },
+    "milestone_02": 
+                    {
+                     "year": -300,
+                     "title": "Euklidovy algoritmy",
+                     "description": "Popis algoritmů pro výpočet největšího společného dělitele."
+                    }
+}
+
+

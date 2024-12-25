@@ -1,0 +1,78 @@
+Pro vývoj naší webové aplikace "Cesta časem ICT" s ohledem na principy Extrémního programování (XP) a dosavadní specifikaci projektu doporučuji následující sadu nástrojů a postup jejich implementace:
+
+1. Editor kódu:
+
+Doporučení: Visual Studio Code (VS Code) – je zdarma, multiplatformní, má skvělou podporu pro webové technologie (HTML, CSS, JavaScript) a disponuje mnoha užitečnými rozšířeními.
+Implementace: Stáhněte a nainstalujte VS Code z oficiálních stránek (code.visualstudio.com). Po instalaci otevřete složku projektu ict-time-travel pomocí volby "Open Folder...".
+2. Prohlížeč:
+
+Doporučení: Google Chrome nebo Mozilla Firefox – oba prohlížeče mají výborné vývojářské nástroje (DevTools), které nám pomohou s laděním a testováním aplikace.
+Implementace: Ujistěte se, že máte nainstalovanou aktuální verzi jednoho z těchto prohlížečů.
+3. Správa verzí (Version Control):
+
+Doporučení: Git – standard pro správu verzí kódu. Umožňuje sledovat změny, spolupracovat s ostatními vývojáři a vracet se k předchozím verzím.
+Implementace:
+Nainstalujte Git z oficiálních stránek (git-scm.com).
+Vytvořte si účet na platformě pro hostování Git repozitářů (např. GitHub, GitLab, Bitbucket).
+Inicializujte Git repozitář ve složce projektu ict-time-travel pomocí příkazu git init.
+Přidejte soubory do repozitáře pomocí git add . (tečka přidá všechny soubory).
+Proveďte první commit pomocí git commit -m "Initial commit".
+Propojte lokální repozitář se vzdáleným repozitářem na GitHubu/GitLabu/Bitbucketu a pushněte kód.
+4. Testovací framework:
+
+Doporučení: Jest – populární JavaScriptový testovací framework, který se dobře integruje s VS Code. Je vhodný pro unit testy i integrační testy.
+Implementace:
+Inicializujte Node.js projekt v kořenovém adresáři projektu pomocí příkazu npm init -y (vytvoří soubor package.json).
+Nainstalujte Jest jako vývojovou závislost pomocí npm install --save-dev jest.
+Přidejte do souboru package.json do sekce "scripts" skript pro spouštění testů: "test": "jest".
+Vytvořte testovací soubory v adresáři test/ (např. script.test.js).
+5. Formátování kódu:
+
+Doporučení: Prettier – nástroj pro automatické formátování kódu. Zajišťuje jednotný styl kódu v celém projektu.
+Implementace:
+Nainstalujte Prettier jako vývojovou závislost pomocí npm install --save-dev prettier.
+Vytvořte konfigurační soubor .prettierrc.json (volitelné, pro vlastní nastavení).
+Přidejte do souboru package.json do sekce "scripts" skript pro formátování kódu: "format": "prettier --write .".
+6. Lintování kódu:
+
+Doporučení: ESLint – nástroj pro statickou analýzu kódu. Pomáhá odhalovat chyby a dodržovat dobré programovací praktiky.
+Implementace:
+Nainstalujte ESLint jako vývojovou závislost pomocí npm install --save-dev eslint.
+Inicializujte ESLint pomocí npx eslint --init a vyberte si konfiguraci podle vašich potřeb (doporučuji "Use a popular style guide" a "Airbnb").
+Přidejte do souboru package.json do sekce "scripts" skript pro lintování kódu: "lint": "eslint .".
+Stručný souhrn příkazů pro terminál:
+
+Bash
+
+# Inicializace Node.js projektu
+npm init -y
+
+# Instalace Jest
+npm install --save-dev jest
+
+# Instalace Prettier
+npm install --save-dev prettier
+
+# Instalace ESLint
+npm install --save-dev eslint
+npx eslint --init
+
+# Úprava package.json
+# ... viz výše
+
+# Spuštění testů
+npm test
+
+# Formátování kódu
+npm run format
+
+# Lintování kódu
+npm run lint
+Workflow s těmito nástroji:
+
+Vývoj: Pište kód v VS Code.
+Testování: Pište testy v souborech *.test.js a spouštějte je pomocí npm test.
+Formátování: Formátujte kód pomocí npm run format.
+Lintování: Kontrolujte kód pomocí npm run lint.
+Správa verzí: Pravidelně commitujte změny pomocí Git a pushujte je do vzdáleného repozitáře.
+Díky těmto nástrojům a workflow budeme mít kód kvalitní, testovatelný, sjednocený a snadno udržovatelný. Budeme moci efektivně spolupracovat a rychle reagovat na změny požadavků, což jsou klíčové principy XP.

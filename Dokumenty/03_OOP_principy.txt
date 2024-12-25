@@ -1,0 +1,56 @@
+Výborný cíl! Vytvořit udržitelnou a rozšiřitelnou aplikaci je klíčové pro dlouhodobý úspěch projektu. OOP (objektově orientované programování) nám k tomu dává silné nástroje. Zde je návrh struktury a postup, jak budovat aplikaci jako skládačku z lega:
+
+I. Základní principy OOP, které musíme dodržovat:
+
+Abstrakce: Zaměřujeme se na podstatné vlastnosti objektů a ignorujeme detaily, které nejsou v daném kontextu důležité. Např. u auta nás zajímá, že má motor, kola a volant, ale ne nutně počet šroubů v motoru.
+Zapouzdření (Encapsulation): Data a metody, které s nimi pracují, jsou uzavřeny uvnitř objektu. K datům se přistupuje pouze pomocí definovaných rozhraní (metod). Tím se chrání data před neoprávněnou manipulací a zjednodušuje se údržba.
+Dědičnost (Inheritance): Umožňuje vytvářet nové třídy na základě existujících tříd. Nová třída (potomek) dědí vlastnosti a chování od původní třídy (rodič). Tím se eliminuje duplikace kódu a zvyšuje se znovupoužitelnost.
+Polymorfismus: Umožňuje, aby se s objekty různých tříd zacházelo stejným způsobem, pokud implementují stejné rozhraní. To zvyšuje flexibilitu a rozšiřitelnost kódu.
+II. Architektura aplikace (vrstvy):
+
+Pro dosažení dobré organizace a oddělení zodpovědností je vhodné aplikaci rozdělit do vrstev:
+
+Prezentační vrstva (UI): Zajišťuje interakci s uživatelem. Zahrnuje grafické rozhraní, formuláře, zobrazení dat atd. Tato vrstva by měla být co nejjednodušší a delegovat veškerou logiku na nižší vrstvy.
+
+Aplikační vrstva (Business Logic): Obsahuje logiku aplikace, zpracovává požadavky od prezentační vrstvy a komunikuje s doménovou vrstvou. Zde se nacházejí tzv. "use cases" (případy užití) – scénáře, jak uživatel s aplikací interaguje.
+
+Doménová vrstva (Domain Model): Reprezentuje základní koncepty a pravidla dané domény (např. e-shop – produkty, zákazníci, objednávky). Obsahuje objekty, které modelují reálné entity a jejich vztahy. Tato vrstva by měla být nezávislá na technických detailech a zaměřovat se pouze na logiku domény.
+
+Datová vrstva (Data Access): Zajišťuje přístup k datům (databáze, soubory, API). Odděluje aplikační logiku od detailů uložení dat. Používají se zde Data Access Objects (DAO) nebo Repozitáře.
+
+III. Struktura kódu (balíčky/namespaces):
+
+Pro přehlednost a modularitu je vhodné kód rozdělit do balíčků (v Javě) nebo namespaces (v C#):
+
+ui (nebo presentation): Obsahuje třídy pro prezentační vrstvu.
+application (nebo services): Obsahuje třídy pro aplikační vrstvu (use cases).
+domain: Obsahuje třídy pro doménovou vrstvu (entity, value objects).
+data: Obsahuje třídy pro datovou vrstvu (DAO, Repozitáře).
+utils (nebo helpers): Obsahuje pomocné třídy a utility.
+IV. Postup přidávání nové funkcionality:
+
+Definice požadavků: Jasně definujte, co má nová funkcionalita dělat.
+
+Návrh doménového modelu: Pokud je to potřeba, rozšiřte doménový model o nové entity a vztahy.
+
+Implementace use case (v aplikační vrstvě): Vytvořte nový use case, který bude implementovat logiku nové funkcionality. Tento use case by měl komunikovat s doménovou vrstvou.
+
+Úprava prezentační vrstvy: Přidejte nové prvky uživatelského rozhraní pro interakci s novou funkcionalitou.
+
+Testování: Důkladně otestujte novou funkcionalitu, abyste se ujistili, že funguje správně a neovlivňuje stávající funkcionalitu.
+
+V. Příklady návrhových vzorů (Design Patterns):
+
+Pro usnadnění návrhu a zlepšení kvality kódu je vhodné používat osvědčené návrhové vzory:
+
+Factory: Pro vytváření objektů.
+Singleton: Pro zajištění existence jediné instance třídy.
+Strategy: Pro definování rodiny algoritmů a jejich zaměnitelnost.
+Observer: Pro notifikaci změn stavu objektu.
+Repository: Pro abstrakci přístupu k datům.
+VI. Důležité zásady:
+
+SOLID principy: Dodržování těchto principů (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) vede k lepšímu návrhu a údržbě.
+Testování: Psaní unit testů a integračních testů je klíčové pro zajištění kvality a bezpečnou rozšiřitelnost.
+Konzistentní kódování: Dodržování stejných konvencí pro psaní kódu usnadňuje orientaci v kódu a spolupráci v týmu.
+Tento postup a struktura vám umožní budovat aplikaci modulárně, s jasně oddělenými zodpovědnostmi. Přidávání nové funkcionality bude bezpečné a s minimálním rizikem ovlivnění stávajícího kódu. Aplikace se bude skutečně chovat jako skládačka z lega.

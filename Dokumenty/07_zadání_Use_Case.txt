@@ -1,0 +1,69 @@
+V Extrémním programování (XP) se k dokumentaci přistupuje minimalisticky a pragmaticky. Důraz se klade na kód, testy a ústní komunikaci v týmu, nikoliv na rozsáhlé formální dokumenty. Dokumentace se vytváří jen tehdy, když je to nezbytně nutné a má přímou hodnotu pro vývoj.
+
+Role dokumentů o zadání v XP:
+
+Tradiční dokumenty o zadání, jako jsou detailní specifikace požadavků, v XP nehrají ústřední roli. Místo nich se používají lehčí a agilnější formy dokumentace, které se vyvíjejí spolu s projektem. Hlavní důvody jsou:
+
+Změny požadavků: V reálném světě se požadavky na software často mění. Rozsáhlé dokumenty se pak stávají rychle zastaralými a jejich údržba je náročná. XP s tímto počítá a upřednostňuje flexibilitu.
+Komunikace: XP klade důraz na ústní komunikaci mezi vývojáři a zákazníkem. To umožňuje rychlejší a efektivnější sdílení informací a upřesňování požadavků.
+Živý kód: Dobře napsaný kód a automatické testy slouží jako nejlepší dokumentace. Ukazují, jak by se měl systém chovat a jak funguje.
+Jaký dokument týkající se zadání vytvořit v XP:
+
+V XP se používají následující formy dokumentace, které nahrazují tradiční dokumenty o zadání:
+
+Uživatelské příběhy (User Stories): Jsou stručné a srozumitelné popisy funkcionality z pohledu uživatele. Mají formát: "Jako [typ uživatele] chci [cíl], abych [důvod]".
+
+Příklad pro náš projekt "Cesta časem ICT":
+"Jako student chci vidět interaktivní časovou osu, abych se lépe orientoval v historii ICT."
+"Jako učitel chci mít možnost zobrazit popis jednotlivých milníků po kliknutí, abych mohl studentům poskytnout doplňující informace."
+Akceptační testy (Acceptance Tests): Definuují kritéria, která musí být splněna, aby byl uživatelský příběh považován za hotový. Často se používají ve formě scénářů "když-pak" (Given-When-Then).
+
+Příklad pro uživatelský příběh "Jako student chci vidět interaktivní časovou osu...":
+Když se načte stránka, pak se zobrazí horizontální časová osa.
+Když uživatel klikne na událost na ose, pak se zobrazí modální okno s popisem události.
+Metafora: Jednoduchý a srozumitelný popis celého systému, který slouží jako společný jazyk pro celý tým.
+
+Pro náš projekt: "Cesta časem ICT" – uživatel cestuje časem a objevuje milníky v historii ICT.
+CRC karty (Class-Responsibility-Collaborator): Používají se pro návrh objektů a jejich interakcí. V našem projektu prozatím nebudou potřeba, ale v pozdějších fázích, pokud budeme používat objektově orientovaný přístup, se mohou hodit.
+
+Use Stories a Use Case:
+
+Use Stories (Uživatelské příběhy): Jak bylo popsáno výše, jsou stručné popisy funkcionality z pohledu uživatele. Jsou ideální pro XP, protože jsou jednoduché, srozumitelné a snadno se s nimi pracuje.
+Use Case (Případy užití): Jsou detailnější popisy interakcí mezi uživatelem a systémem. Obsahují detailní scénáře, alternativní toky a pre- a post-condition. V XP se obvykle nepoužívají v takové míře detailu jako v tradičních metodikách, protože jsou náročné na údržbu.
+Pro náš projekt "Cesta časem ICT" doporučuji:
+
+Zaměřit se na uživatelské příběhy: Definovat několik klíčových uživatelských příběhů pro každou iteraci.
+K nim vytvořit akceptační testy: Tyto testy budou sloužit jako kritéria pro dokončení funkcionality a zároveň jako dokumentace.
+Používat metaforu "Cesta časem ICT" pro sjednocení vize projektu.
+Příklad dokumentu (soubor README.md):
+
+Markdown
+
+# ICT Time Travel
+
+Aplikace pro interaktivní zobrazení historie výpočetní techniky.
+
+## Metafora
+
+Cesta časem ICT – uživatel cestuje časem a objevuje milníky v historii ICT.
+
+## Uživatelské příběhy
+
+*   Jako student chci vidět interaktivní časovou osu, abych se lépe orientoval v historii ICT.
+    *   Akceptační testy:
+        *   Když se načte stránka, pak se zobrazí horizontální časová osa.
+        *   Když uživatel klikne na událost na ose, pak se zobrazí modální okno s popisem události.
+*   Jako učitel chci mít možnost zobrazit popis jednotlivých milníků po kliknutí, abych mohl studentům poskytnout doplňující informace.
+    *   Akceptační testy:
+        *   Když uživatel klikne na událost na ose, pak se zobrazí modální okno s titulkem a popisem události.
+
+## Technologie
+
+*   HTML
+*   CSS
+*   JavaScript
+
+## Další informace
+
+Projekt vyvíjen v rámci kurzu [název kurzu/projektu] s využitím metodiky Extrémního programování.
+Tento přístup nám umožní mít dokumentaci, která je lehká, srozumitelná a relevantní pro vývoj. Zároveň se vyhneme zbytečnému papírování a budeme se moci soustředit na kód a komunikaci.

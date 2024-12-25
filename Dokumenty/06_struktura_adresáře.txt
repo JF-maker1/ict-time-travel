@@ -1,0 +1,89 @@
+Výborně, pojďme se vrhnout na implementaci prostředí pro náš projekt "Cesta časem ICT" s ohledem na principy Extrémního programování (XP) a strukturu webové aplikace.
+
+Umístění a název adresáře projektu:
+
+V XP se klade důraz na jednoduchost a srozumitelnost. Doporučuje se umístit projekt do logického umístění na disku, kde k němu bude mít tým snadný přístup. Název adresáře by měl být stručný, výstižný a v angličtině (pro lepší spolupráci v mezinárodním prostředí).
+
+Doporučené umístění: V uživatelském adresáři, například ~/projekty/ (Linux/macOS) nebo C:\Users\Uzivatel\Projekty\ (Windows).
+Doporučený název: ict-time-travel nebo ict-history-app. Pro jednoduchost zvolme ict-time-travel.
+Struktura adresářů projektu:
+
+Struktura adresářů by měla být přehledná a logická, aby se v projektu dalo snadno orientovat. Pro náš projekt doporučuji následující strukturu, která zohledňuje principy webové aplikace a XP:
+
+ict-time-travel/
+├── index.html            // Hlavní HTML soubor
+├── css/
+│   └── style.css        // Styly aplikace
+├── js/
+│   ├── script.js        // Hlavní JavaScript soubor (pro úvodní fázi)
+│   ├── timeline.js      // Logika pro časovou osu (pro pozdější fáze)
+│   ├── components/      // Komponenty UI (pro pozdější fáze, např. React)
+│   └── data/
+│       └── history.json // Data o historii ICT (JSON)
+├── img/                   // Obrázky
+├── test/                 // Testy (důležité pro XP)
+│   └── script.test.js   // Testy pro script.js (příklad)
+└── README.md             // Základní informace o projektu
+Vysvětlení jednotlivých adresářů:
+
+index.html: Hlavní HTML soubor, který definuje strukturu webové stránky.
+css/: Adresář pro styly CSS.
+js/: Adresář pro JavaScriptové soubory.
+script.js: Hlavní JavaScriptový soubor pro úvodní funkcionalitu.
+timeline.js: Soubor pro logiku interaktivní časové osy (přidáme v pozdější iteraci).
+components/: Adresář pro komponenty uživatelského rozhraní (použijeme, pokud budeme používat framework jako React).
+data/: Adresář pro data aplikace.
+history.json: Soubor s daty o historii ICT ve formátu JSON.
+img/: Adresář pro obrázky.
+test/: Adresář pro testy.
+script.test.js: Příklad testovacího souboru pro script.js. Důležité pro TDD v XP.
+README.md: Soubor s popisem projektu, instrukcemi pro spuštění a dalšími důležitými informacemi.
+Pro první iteraci:
+
+V první iteraci se zaměříme na základní funkcionalitu, takže budeme primárně pracovat s těmito soubory:
+
+index.html
+css/style.css
+js/script.js
+js/data/history.json
+test/script.test.js (pro testování script.js)
+README.md
+Příklad obsahu history.json:
+
+JSON
+
+[
+  {
+    "year": -3000,
+    "title": "Abakus",
+    "description": "První mechanické počítadlo používané ve starověkém Sumeru a Egyptě."
+  },
+  {
+    "year": -300,
+    "title": "Euklidovy algoritmy",
+    "description": "Popis algoritmů pro výpočet největšího společného dělitele."
+  }
+  // ... další události
+]
+Příklad obsahu README.md:
+
+Markdown
+
+# ICT Time Travel
+
+Aplikace pro interaktivní zobrazení historie výpočetní techniky.
+
+## Spuštění
+
+Stačí otevřít soubor `index.html` ve webovém prohlížeči.
+
+## Technologie
+
+*   HTML
+*   CSS
+*   JavaScript
+
+## Další informace
+
+Projekt vyvíjen v rámci kurzu [název kurzu/projektu] s využitím metodiky Extrémního programování.
+Tato struktura nám poskytuje dobrý základ pro zahájení vývoje. V dalších iteracích budeme projekt postupně rozšiřovat o další funkcionality a soubory. Důležité je, že díky této struktuře a principům XP budeme mít kód přehledný, testovatelný a snadno udržovatelný.

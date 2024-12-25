@@ -1,0 +1,52 @@
+Extrémní programování (XP) je agilní metodika vývoje softwaru, která klade důraz na jednoduchost, komunikaci, zpětnou vazbu a odvahu. Cílem je vytvářet vysoce kvalitní software v krátkých cyklech a s minimálním rizikem. XP se zaměřuje na lidi a interakce, nikoli na procesy a dokumentaci.
+
+I. Základní hodnoty XP:
+
+Komunikace: Neustálá komunikace mezi vývojáři, zákazníky a stakeholdery.
+Jednoduchost: Navrhovat a implementovat co nejjednodušší řešení, které splňuje aktuální požadavky.
+Zpětná vazba: Rychlá a častá zpětná vazba od zákazníků a testů.
+Odvaha: Nebát se změn, refaktorovat kód a zkoušet nové postupy.
+Respekt: Vzájemný respekt mezi členy týmu a respekt k zákazníkovi.
+II. Praktiky XP:
+
+XP se skládá z mnoha praktik, které se vzájemně doplňují:
+
+Plánování hry (Planning Game): Zákazník a vývojáři společně plánují rozsah iterace (sprintu), definují uživatelské příběhy (user stories) a odhadují jejich náročnost.
+Malé iterace (Small Releases): Časté a krátké iterace (typicky 1-3 týdny), na konci každé iterace je dodána funkční verze softwaru.
+Metafora (Metaphor): Vytvoření společné vize systému pomocí jednoduché metafory, která usnadňuje komunikaci a pochopení.
+Jednoduchý návrh (Simple Design): Navrhovat co nejjednodušší řešení, které splňuje aktuální požadavky. Vyhýbat se zbytečné komplexitě.
+Testování (Testing): Psaní automatizovaných testů před napsáním kódu (Test-Driven Development - TDD). Důraz na unit testy, integrační testy a akceptační testy.
+Refaktorování (Refactoring): Neustálé vylepšování kódu bez změny jeho funkčnosti. Odstraňování duplicitního kódu, zjednodušování složitých částí a zlepšování čitelnosti.
+Párové programování (Pair Programming): Dva programátoři pracují u jednoho počítače. Jeden píše kód (driver), druhý sleduje kód, hledá chyby a navrhuje vylepšení (navigator).
+Společné vlastnictví kódu (Collective Code Ownership): Každý člen týmu může upravovat jakoukoli část kódu.
+Průběžná integrace (Continuous Integration - CI): Častá integrace kódu do sdíleného repozitáře a automatické testování.
+40hodinový pracovní týden (40-hour Week): Důraz na vyvážený život a prevenci vyhoření.
+Zákazník na místě (On-site Customer): Zákazník je neustále k dispozici pro zodpovídání otázek a poskytování zpětné vazby.
+Kódovací standardy (Coding Standards): Dodržování jednotných kódovacích standardů pro zajištění čitelnosti a srozumitelnosti kódu.
+III. Nástroje pro XP a CI/CD:
+
+Pro podporu XP a CI/CD se používají různé nástroje:
+
+Systém pro správu verzí (Git): Pro správu zdrojového kódu a spolupráci v týmu. Služby jako GitHub, GitLab a Bitbucket.
+Nástroj pro správu úkolů (Jira, Trello, Asana): Pro evidenci uživatelských příběhů, úkolů a chyb.
+Build automatizační nástroj (Maven, Gradle, Ant): Pro automatizaci kompilace, testování a balíčkování aplikace.
+CI/CD server (Jenkins, GitLab CI, GitHub Actions): Pro automatizaci buildů, testování a nasazování.
+Testovací frameworky (JUnit, TestNG, Selenium): Pro psaní a spouštění automatizovaných testů.
+Nástroje pro statickou analýzu kódu (SonarQube, Checkstyle, FindBugs): Pro kontrolu kvality kódu a odhalování potenciálních chyb.
+IV. Praktiky pro využití CI/CD v XP:
+
+Časté commity (Small Commits): Časté odesílání malých změn do repozitáře.
+Automatické buildy po každém commitu: CI server automaticky sestaví aplikaci a spustí testy po každé změně v kódu.
+Rychlé testy: Testy by měly být rychlé, aby nebrzdily proces integrace.
+Zelený build (Green Build): Cílem je mít neustále "zelený build", tzn. všechny testy by měly procházet.
+Automatické nasazování (Continuous Deployment): Automatické nasazování nových verzí aplikace do produkčního prostředí po úspěšném průběhu testů. (Často se používá Continuous Delivery, kde je nasazení do produkce řízeno manuálně, ale je připraveno k okamžitému nasazení.)
+Feedback loop: Rychlá zpětná vazba o stavu buildů a testů pro vývojáře.
+Infrastructure as Code (IaC): Správa infrastruktury pomocí kódu, což umožňuje automatizaci nasazování a konfigurace prostředí.
+V. Přínosy XP a CI/CD:
+
+Vyšší kvalita kódu: Díky testování a refaktorování.
+Rychlejší dodávání hodnoty: Díky krátkým iteracím a automatizaci.
+Nižší riziko chyb: Díky neustálé integraci a testování.
+Větší flexibilita: Díky časté zpětné vazbě a možnosti rychlé reakce na změny.
+Spokojenější zákazník: Díky častým dodávkám a možnosti ovlivňovat vývoj.
+Extrémní programování v kombinaci s CI/CD je silný nástroj pro vývoj vysoce kvalitního softwaru v agilním prostředí. Důležité je si uvědomit, že XP není jen o používání nástrojů, ale především o dodržování hodnot a praktik, které vedou k efektivní spolupráci a kvalitnímu kódu.

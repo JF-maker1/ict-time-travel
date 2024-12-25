@@ -1,0 +1,60 @@
+I. Vývojové metodiky:
+
+Vývojové metodiky definují postupy a pravidla pro řízení vývoje softwaru. Mezi nejběžnější patří:
+
+Vodopádový model (Waterfall): Lineární sekvenční model, kde každá fáze (analýza, návrh, implementace, testování, nasazení, údržba) probíhá postupně. Je vhodný pro menší a dobře definované projekty s jasnými požadavky. Málo flexibilní pro změny v průběhu vývoje.
+
+Agilní metodiky (Agile): Iterativní a inkrementální přístup, který klade důraz na flexibilitu, spolupráci se zákazníkem a rychlou reakci na změny. Mezi nejznámější agilní metodiky patří:
+
+Scrum: Pracuje se v krátkých iteracích (sprintech), s denními stand-up meetingy, review a retrospektivami.
+Kanban: Zaměřuje se na vizualizaci workflow a plynulé dodávání hodnoty.
+Extreme Programming (XP): Klade důraz na testování, párové programování a neustálou integraci.
+DevOps: Kombinuje vývoj (Development) a provoz (Operations) s cílem zautomatizovat procesy nasazování a údržby softwaru. Klade důraz na spolupráci, automatizaci a neustálé zlepšování.
+
+Výběr vhodné metodiky:
+
+Volba metodiky závisí na charakteru projektu, velikosti týmu, požadavcích zákazníka a dalších faktorech. Pro komplexní a dynamické projekty s častými změnami jsou vhodnější agilní metodiky. Pro menší a statické projekty může být vhodný i vodopádový model. DevOps je spíše soubor praktik a principů, které se dají aplikovat i v kombinaci s jinými metodikami.
+
+II. Nástroje vývojového cyklu SW (Software Development Life Cycle - SDLC):
+
+Tyto nástroje podporují jednotlivé fáze vývoje a usnadňují spolupráci v týmu:
+
+Systémy pro správu verzí (Version Control Systems - VCS): Umožňují sledování změn v kódu, spolupráci více vývojářů na jednom projektu a návrat k předchozím verzím. Mezi nejpopulárnější patří:
+
+Git: Distribuovaný systém pro správu verzí, široce používaný v open-source i komerčních projektech. Služby jako GitHub, GitLab a Bitbucket poskytují hosting pro Git repozitáře a další nástroje pro spolupráci.
+SVN (Subversion): Centralizovaný systém pro správu verzí.
+Nástroje pro správu úkolů (Issue Tracking Systems): Slouží pro evidenci chyb, požadavků na nové funkce a dalších úkolů. Umožňují sledování stavu úkolů, přiřazování k vývojářům a komunikaci v týmu. Mezi nejznámější patří:
+
+Jira: Komplexní nástroj pro správu projektů a úkolů, podporuje agilní metodiky.
+Trello: Kanban nástroj pro vizualizaci workflow.
+Asana: Nástroj pro správu projektů a úkolů s důrazem na spolupráci.
+Nástroje pro automatizaci buildů (Build Automation Tools): Umožňují automatizaci kompilace kódu, testování a vytváření instalačních balíčků. Zrychlují proces nasazování a snižují riziko chyb. Mezi nejběžnější patří:
+
+Maven (Java): Nástroj pro správu závislostí a build Java projektů.
+Gradle: Flexibilní build systém, který podporuje více jazyků.
+Jenkins: Open-source automatizační server pro Continuous Integration/Continuous Delivery (CI/CD).
+Nástroje pro testování (Testing Tools): Podporují různé typy testování (unit testy, integrační testy, UI testy, atd.) a automatizují testovací proces. Mezi nejpoužívanější patří:
+
+JUnit (Java): Framework pro unit testy v Javě.
+Selenium: Nástroj pro automatizaci testů webových aplikací.
+Mockito (Java): Framework pro mockování objektů při testování.
+Nástroje pro statickou analýzu kódu (Static Code Analysis Tools): Analyzují zdrojový kód bez jeho spuštění a odhalují potenciální chyby, bezpečnostní zranitelnosti a porušování kódovacích standardů. Mezi příklady patří:
+
+SonarQube: Platforma pro správu kvality kódu.
+Checkstyle (Java): Nástroj pro kontrolu dodržování kódovacích standardů v Javě.
+FindBugs (Java): Nástroj pro detekci potenciálních chyb v Javě.
+Nástroje pro správu dokumentace: Usnadňují tvorbu a údržbu dokumentace k projektu.
+
+Javadoc (Java): Nástroj pro generování dokumentace z komentářů v kódu.
+III. Continuous Integration/Continuous Delivery (CI/CD):
+
+CI/CD je soubor praktik, které automatizují proces integrace, testování a nasazování kódu. Cílem je zrychlit vývojový cyklus, snížit riziko chyb a zajistit časté a spolehlivé dodávání nových verzí softwaru.
+
+Přínosy dodržování metodik a používání nástrojů:
+
+Zvýšení kvality kódu: Automatické testování a statická analýza pomáhají odhalit chyby v rané fázi vývoje.
+Zrychlení vývoje: Automatizace buildů a nasazování šetří čas vývojářů.
+Zlepšení spolupráce v týmu: Nástroje pro správu verzí a úkolů usnadňují komunikaci a koordinaci práce.
+Snížení nákladů na údržbu: Kvalitní a srozumitelný kód se snáze udržuje a rozšiřuje.
+Větší spokojenost zákazníka: Časté a spolehlivé dodávání nových funkcí vede k větší spokojenosti zákazníka.
+Dodržování vývojových metodik a používání nástrojů vývojového cyklu SW je tedy nedílnou součástí tvorby udržitelného kódu. Zajišťují, že vývoj probíhá efektivně, s ohledem na kvalitu a s minimálním rizikem chyb.

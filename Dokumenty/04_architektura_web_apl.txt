@@ -1,0 +1,59 @@
+Výborně! Rozhodnutí pro webovou aplikaci je pro náš projekt s ohledem na dostupnost a interaktivitu rozumné. Pojďme se podívat na to, jaká je typická struktura kompletní webové aplikace.
+
+Webová aplikace se obvykle skládá z několika vrstev, které spolupracují na zajištění její funkčnosti. Nejčastěji se setkáváme s architekturou třívrstvou (three-tier architecture), která odděluje prezentační, aplikační a datovou vrstvu. Někdy se hovoří i o N-vrstvé architektuře, kde se aplikační vrstva dále dělí na menší celky.
+
+1. Prezentační vrstva (Frontend/Client-side):
+
+Účel: Zajišťuje interakci s uživatelem. Zobrazuje data a přijímá uživatelské vstupy.
+Technologie:
+HTML: Struktura webové stránky (obsah, elementy).
+CSS: Styl a vzhled webové stránky (vzhled, rozložení).
+JavaScript: Interaktivita a dynamické chování webové stránky (animace, reakce na události, komunikace se serverem).
+Frameworky/knihovny (volitelné): React, Vue, Angular, jQuery – usnadňují vývoj komplexních UI.
+Příklad v našem projektu: Zobrazení časové osy, popisků událostí, interaktivních prvků, kvízů.
+2. Aplikační vrstva (Backend/Server-side/Business Logic):
+
+Účel: Obsahuje logiku aplikace, zpracovává požadavky od prezentační vrstvy, komunikuje s datovou vrstvou.
+Technologie:
+Programovací jazyky: Python (Django, Flask), Java (Spring), Node.js (Express), PHP (Laravel), Ruby on Rails, C# (.NET).
+Webové servery: Apache, Nginx.
+Aplikační servery (volitelné): Tomcat, JBoss.
+Příklad v našem projektu (pro budoucí rozšíření): Zpracování výsledků kvízů, ukládání uživatelských dat, autentizace uživatelů, generování dynamického obsahu. V úvodní fázi, jak bylo zmíněno, tuto vrstvu pravděpodobně nebudeme potřebovat, data můžeme mít staticky.
+3. Datová vrstva (Data Layer/Database):
+
+Účel: Ukládá data aplikace.
+Technologie:
+Relační databáze: MySQL, PostgreSQL, Oracle, SQL Server.
+NoSQL databáze: MongoDB, Cassandra, Redis.
+Příklad v našem projektu (pro budoucí rozšíření): Ukládání informací o historických událostech, uživatelských účtů, výsledků kvízů. Pro úvodní fázi projektu nám postačí data uložená ve formátu JSON, která budeme načítat přímo v prohlížeči.
+Komunikace mezi vrstvami:
+
+Prezentační vrstva komunikuje s aplikační vrstvou pomocí HTTP požadavků (např. GET, POST).
+Aplikační vrstva komunikuje s datovou vrstvou pomocí databázových dotazů (např. SQL).
+Další důležité komponenty:
+
+API (Application Programming Interface): Rozhraní, které definuje, jak spolu mohou komunikovat různé softwarové komponenty. V kontextu webových aplikací se často jedná o REST API.
+CDN (Content Delivery Network): Síť serverů, která slouží k distribuci statického obsahu (obrázky, CSS, JavaScript) a urychluje načítání webové stránky.
+Deployment: Proces nasazení aplikace na server.
+Verzionování (Version Control): Systém pro sledování změn v kódu (např. Git).
+Struktura souborů v projektu (příklad):
+
+cesta-casem-ict/
+├── index.html            // Hlavní HTML soubor
+├── css/
+│   └── style.css        // Styly aplikace
+├── js/
+│   ├── script.js        // Hlavní JavaScript soubor
+│   ├── timeline.js      // Logika pro časovou osu
+│   └── data.json        // Data o historii ICT (JSON)
+└── img/                   // Obrázky
+Pro náš projekt v úvodní fázi:
+
+Vzhledem k jednoduchosti úvodní fáze projektu a použití metodiky XP, se budeme zpočátku soustředit primárně na prezentační vrstvu (frontend) s daty uloženými v JSON souboru. Tedy:
+
+Frontend: HTML, CSS, JavaScript (pravděpodobně bez frameworku pro jednodušší začátek).
+Data: JSON soubor.
+Backend a databázi prozatím vynecháme.
+Tento minimalistický přístup nám umožní rychle vytvořit funkční prototyp a otestovat základní koncept. V dalších iteracích, na základě zpětné vazby, pak můžeme přidávat další funkcionality a případně implementovat i backend a databázi.
+
+Tato struktura nám poskytuje solidní základ pro budoucí rozšiřování a údržbu aplikace. Postupným přidáváním funkcionalit a komponent se budeme držet principů XP a neustále vylepšovat náš produkt.

@@ -1,0 +1,35 @@
+Extrémní programování (XP) nemá klasický vývojový cyklus s pevně danými fázemi jako například vodopádový model. Místo toho se zaměřuje na iterativní a inkrementální přístup, kde se vývoj dělí na krátké iterace, tzv. iterace (sprinty). Každá iterace má za cíl dodat funkční část softwaru.
+
+Struktura iterace v XP:
+
+Iterace v XP obvykle trvá 1-3 týdny, nejčastěji 1-2 týdny. Každá iterace se skládá z následujících aktivit, které se v průběhu iterace opakují:
+
+Plánování iterace (Planning Game): Na začátku iterace se sejde vývojový tým se zákazníkem (nebo zástupcem zákazníka) a společně plánují, co se bude v dané iteraci vyvíjet. Zákazník definuje uživatelské příběhy (user stories), což jsou krátké popisy funkcionality z pohledu uživatele. Vývojáři odhadují náročnost implementace jednotlivých příběhů a vybírají ty, které se stihnou v dané iteraci. Plánování probíhá interaktivně, pomocí karet nebo online nástrojů.
+
+Vývoj (Coding): Vývojáři pracují v párech (pair programming) a implementují vybrané uživatelské příběhy. Důraz je kladen na testování řízené vývojem (TDD), což znamená, že nejdříve se píší automatizované testy a teprve poté kód, který tyto testy splní. Během vývoje probíhá průběžná integrace (Continuous Integration), kdy se kód často integruje do sdíleného repozitáře a automaticky se testuje.
+
+Testování a integrace (Testing and Integration): Po implementaci každého uživatelského příběhu probíhá důkladné testování, včetně unit testů, integračních testů a akceptačních testů (ty testují, zda funkcionalita splňuje požadavky zákazníka). V průběhu iterace probíhá neustálá integrace kódu a automatické testování, aby se co nejdříve odhalily případné chyby.
+
+Demo a zpětná vazba (Demo and Feedback): Na konci iterace se koná demo, kde vývojáři prezentují zákazníkovi hotovou funkcionalitu. Zákazník poskytuje zpětnou vazbu a potvrzuje, zda implementace odpovídá jeho požadavkům. Tato zpětná vazba se využívá pro plánování dalších iterací.
+
+Životní cyklus projektu v XP:
+
+I když XP nemá klasické fáze, lze rozlišit určité etapy v průběhu celého projektu:
+
+Průzkum (Exploration): V počáteční fázi se zkoumají požadavky zákazníka, definuje se rozsah projektu a vytváří se hrubý plán.
+
+Plánování (Planning): Vytvoří se podrobnější plán iterací a definují se uživatelské příběhy.
+
+Iterace (Iterations): Probíhá opakování iterací, jak je popsáno výše, dokud nejsou implementovány všechny požadované funkcionality.
+
+Nasazení (Deployment): Po dokončení vývoje se software nasadí do produkčního prostředí.
+
+Údržba (Maintenance): Po nasazení se software udržuje a vylepšuje na základě zpětné vazby od uživatelů.
+
+Délka trvání projektu v XP:
+
+Délka trvání projektu v XP závisí na rozsahu projektu a počtu iterací. Díky krátkým iteracím a časté zpětné vazbě je možné pružně reagovat na změny požadavků a dodávat software v kratších cyklech než u tradičních metodik.
+
+Shrnutí:
+
+XP se nespoléhá na rigidní fáze, ale na krátké iterace s jasně definovanými aktivitami. Tento iterativní a inkrementální přístup umožňuje flexibilní vývoj, rychlou reakci na změny a neustálé zlepšování kvality softwaru. Důraz je kladen na komunikaci, zpětnou vazbu a úzkou spolupráci se zákazníkem.
